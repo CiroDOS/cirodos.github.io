@@ -6,23 +6,25 @@
     <meta name="viewport" content="width=device-width">
     <meta name="description" content="Portfolio">
     <meta name="author" content="Ciro Alejo Diaz">
-    <link rel="shortcut icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAC0AAAArCAYAAADsQwGHAAAAAXNSR0IArs4c6QAAA4xJREFUWEftmXdIlWEUxn82LcqG7YW2kIhoktAiGmRklpUWTYqiaJfcirJBSSVJy8oiVMxo0XJkQRRFf0S2aFPR0CJo0e7W1YzDy+Xe283vvrdPIeE7f13ecc7zPed5zzlwA7AfK6GCWUDFBh0YXTH4th/DxbQFuhyTZjFdjuR6uLaYtpg2YMCShyWPspbHsB4wqhe0a6Y8f7PDxbuw+zS8+egZrUplWDAcmgeXjuL2czh7Ewre6OXKL02HtYC0BdA5FAICvAN8/wkpeRCfCUXFan9gZ9gfB3VqGgNyFEPeVZid4v3hf97UBh3SGLJWQPvmxsEF7J4zsGivf6DldEkJHLoEUzYbx9AGvWoc2EZB5UogjO7MhfVH4IsdwsNg2wzoFKKCvf4AMYlw+YEn0z8csHwfJOe4QEn2UudD1zZq7dV7iNkI+Y9KB64N+qANRoQrRzefQvhiT6f9OkLmYmhYB+wOWJKmNO4uj7+BFi9zhkHCRKheFT5+g/GblMZLM23QouVxfZWbwrcQswFuPPH9cHRAz4uEtRPKAfTUQZA0DWpUU0CFkZOXYdcpY/BGoCUrQ7rByrHQsoHym/8QohLg/ecyYFpKl7A9Mhzkt7uJru8XQPo5OHRR6dxputVDHuHdApi+3XcGteXhBDF5ANiiIbQJVPpL2Xv3CTYehW3Z6oYuaDkrd5dlQMY5Y9n5DdrprlVDiOkNUT2hY4hLNrL/1Q5xqZB21vshbs1SjchpbZrA3Eho21StSIMZsQ7uFZaBPIy+vVYgxEXDrKGuJpKTD6PX61WP/p0gcxEEB0HxL0g8CmsOmARdvzbMioAGQapGS/oevPB2enw5RHRT686yqFM9OrSEEytAsie2JQuWppsELTNGdjxIVxTLzYfYRFerljWpBFnx0KW1OnP+FkSs1mM6tg8kz4TaNcqQaQGRvhBie6uZQ176s9cKmDQMaQqS4pBGav9nkUpv0nFP0DJfnLkOhW6DUVBNGNxFfbSYDFwTkuDCHZNMO5mU9Hdva6Ru+FUC2VdUV5M5xJ/qIQTIQ1253ziGX9VDHlzCJBjTC+rV8pz0BOzLd7AjB5JzXdKRueSwDRrVNWDOAXeeq1lGpOfL/ALt7kwejXPicxTBtceeTcVXYDP7/wzaTFCzdy3QZhnUvW8xrcuU2XMW02YZ1L1vMa3LlNlzFtNmGdS978G07qX/4FyF/PPzN5rs6fIqtNS1AAAAAElFTkSuQmCC" type="image/png">
+    <link rel="shortcut icon"
+        href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAC0AAAArCAYAAADsQwGHAAAAAXNSR0IArs4c6QAAA4xJREFUWEftmXdIlWEUxn82LcqG7YW2kIhoktAiGmRklpUWTYqiaJfcirJBSSVJy8oiVMxo0XJkQRRFf0S2aFPR0CJo0e7W1YzDy+Xe283vvrdPIeE7f13ecc7zPed5zzlwA7AfK6GCWUDFBh0YXTH4th/DxbQFuhyTZjFdjuR6uLaYtpg2YMCShyWPspbHsB4wqhe0a6Y8f7PDxbuw+zS8+egZrUplWDAcmgeXjuL2czh7Ewre6OXKL02HtYC0BdA5FAICvAN8/wkpeRCfCUXFan9gZ9gfB3VqGgNyFEPeVZid4v3hf97UBh3SGLJWQPvmxsEF7J4zsGivf6DldEkJHLoEUzYbx9AGvWoc2EZB5UogjO7MhfVH4IsdwsNg2wzoFKKCvf4AMYlw+YEn0z8csHwfJOe4QEn2UudD1zZq7dV7iNkI+Y9KB64N+qANRoQrRzefQvhiT6f9OkLmYmhYB+wOWJKmNO4uj7+BFi9zhkHCRKheFT5+g/GblMZLM23QouVxfZWbwrcQswFuPPH9cHRAz4uEtRPKAfTUQZA0DWpUU0CFkZOXYdcpY/BGoCUrQ7rByrHQsoHym/8QohLg/ecyYFpKl7A9Mhzkt7uJru8XQPo5OHRR6dxputVDHuHdApi+3XcGteXhBDF5ANiiIbQJVPpL2Xv3CTYehW3Z6oYuaDkrd5dlQMY5Y9n5DdrprlVDiOkNUT2hY4hLNrL/1Q5xqZB21vshbs1SjchpbZrA3Eho21StSIMZsQ7uFZaBPIy+vVYgxEXDrKGuJpKTD6PX61WP/p0gcxEEB0HxL0g8CmsOmARdvzbMioAGQapGS/oevPB2enw5RHRT686yqFM9OrSEEytAsie2JQuWppsELTNGdjxIVxTLzYfYRFerljWpBFnx0KW1OnP+FkSs1mM6tg8kz4TaNcqQaQGRvhBie6uZQ176s9cKmDQMaQqS4pBGav9nkUpv0nFP0DJfnLkOhW6DUVBNGNxFfbSYDFwTkuDCHZNMO5mU9Hdva6Ru+FUC2VdUV5M5xJ/qIQTIQ1253ziGX9VDHlzCJBjTC+rV8pz0BOzLd7AjB5JzXdKRueSwDRrVNWDOAXeeq1lGpOfL/ALt7kwejXPicxTBtceeTcVXYDP7/wzaTFCzdy3QZhnUvW8xrcuU2XMW02YZ1L1vMa3LlNlzFtNmGdS978G07qX/4FyF/PPzN5rs6fIqtNS1AAAAAElFTkSuQmCC"
+        type="image/png">
     <meta name="next-head-count" content="5">
     <meta property="og:locale" content="es_ES">
     <link rel="preconnect" href="https://fonts.googleapis.com/">
     <link rel="preconnect" href="https://fonts.gstatic.com/">
     <meta property="og:title" content="Ciro Diaz Portfolio">
     <meta property="og:description" content="Portfolio de Ciro Diaz">
-    <meta property="og:image" content="https://i.imgur.com/WNVA9le.jpeg">
+    <!--<meta property="og:image" content="https://i.imgur.com/WNVA9le.jpeg">-->
     <meta property="og:type" content="website">
     <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
     <link rel="stylesheet" href="sources/css/style.css">
     <noscript data-n-css=""></noscript>
     <JControl>
         <permissions> <!-- For user privacity -->
-            <permission name="view.camera" value="false"/>
-            <permission name="record.microphone" value="false"/>
-            <permission name="accessToUserUbication" value="false"/>
+            <permission name="view.camera" value="false" />
+            <permission name="record.microphone" value="false" />
+            <permission name="accessToUserUbication" value="false" />
         </permissions>
     </JControl>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600&amp;display=swap">
@@ -65,9 +67,9 @@
                 <div class="About_contentAbout__3Qj8F">
                     <section>
                         <h2 class="About_title__mGjZR">Sobre mí</h2>
-                        <p class="About_description__2kDGd">Soy desarrollador fullstack con más de 2 años de experiencia,
-                            trabajando con tecnologías como Java, Spring, Javascript y VB.net. He trabajado en
-                            diferentes proyectos enfocados en los sectores de fábricas y bases de datos de muchas otras empresas</p>
+                        <p class="About_description__2kDGd">Soy desarrollador fullstack con más de 2 años de
+                            experiencia,
+                            trabajando con tecnologías como Java, Spring, Javascript y VB.net.</p>
                     </section>
                     <section>
                         <h2 class="About_title__mGjZR">Tecnologías</h2>
@@ -98,73 +100,11 @@
                     </section>
                 </div>
             </div>
-            <div id="experience" class="Experience_container__HZWxt">
-                <h1 class="Experience_title__ZCSzQ">Experiencia</h1>
-                <div class="Experience_content__cFQRE">
-                    <div class="Experience_contentButtons__Ob3Za"><button
-                            class="Experience_active__tTY4z">PersonalSoft</button><button class="">Indra</button><button
-                            class="">El Lab</button></div>
-                    <div><span style="display: block;">
-                            <h3>Senior Software Developer</h3>
-                            <p class="Experience_date__zBeoB">Oct 2022 - Actualidad</p><span
-                                class="Experience_activity__dRjI6">
-                                <details class="Experience_icon__9r1o5">
-                                    <summary></summary>
-                                </details>
-                                <p>Implementación de nuevas funcionalidades en proyectos varios.</p>
-                            </span><span class="Experience_activity__dRjI6">
-                                <details class="Experience_icon__9r1o5">
-                                    <summary></summary>
-                                </details>
-                                <p>Desarrollo de codigo mantenible y escalable.</p>
-                            </span><span class="Experience_activity__dRjI6">
-                                <details class="Experience_icon__9r1o5">
-                                    <summary></summary>
-                                </details>
-                                <p>Desarrollo de aplicaciones con Java</p>
-                            </span>
-                        </span><span style="display: none;">
-                            <h3>Senior Java Developer</h3>
-                            <p class="Experience_date__zBeoB">Oct 2021 - Oct 2022</p><span
-                                class="Experience_activity__dRjI6">
-                                <details class="Experience_icon__9r1o5">
-                                    <summary></summary>
-                                </details>
-                                <p>Desarrollo y mantenimiento de aplicaciones backend como: Java, Spring, y otras muchas tecnologias</p>
-                            </span><span class="Experience_activity__dRjI6">
-                                <details class="Experience_icon__9r1o5">
-                                    <summary></summary>
-                                </details>
-                                <p>Orientar a los compañeros para la buena implementación de funcionalidades</p>
-                            </span><span class="Experience_activity__dRjI6">
-                                <details class="Experience_icon__9r1o5">
-                                    <summary></summary>
-                                </details>
-                                <p>Comunicación con equipos de diseño y de negocio para la implementación de nuevas
-                                    funcionalidades.</p>
-                            </span>
-                        </span><span style="display: none;">
-                            <h3>Fullstack Developer</h3>
-                            <p class="Experience_date__zBeoB">May 2021 - Oct 2021</p><span
-                                class="Experience_activity__dRjI6">
-                                <details class="Experience_icon__9r1o5">
-                                    <summary></summary>
-                                </details>
-                                <p>Desarrollo de aplicaciones web con Javascript y especialización con Java</p>
-                            </span><span class="Experience_activity__dRjI6">
-                                <details class="Experience_icon__9r1o5">
-                                    <summary></summary>
-                                </details>
-                            </span>
-                        </span></div>
-                </div>
+
+            <div class="footer">
+                <span class="copyright">Copyright &copy; 2023 - Sibermatica</span>
             </div>
-            <div id="projects" class="Projects_container__9axoS">
-                <h1 class="Projects_title__li_qW">Proyectos</h1>
-                <div class="footer">
-                    <span class="copyright">Copyright &copy; 2023 - Sibermatica</span>
-                </div>
-            </div>
+
         </div>
     </div>
     <script id="__NEXT_DATA__"
